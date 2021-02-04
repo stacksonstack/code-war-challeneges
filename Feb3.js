@@ -30,6 +30,54 @@ function getGrade (s1, s2, s3) {
     else return "F" 
 }
 
-  console.log(getGrade(100,85,96))//, 'A')
-  console.log(getGrade(89,89,90))//, 'B') 
-  console.log(getGrade(75,70,79))// , 'C')
+//   console.log(getGrade(100,85,96))//, 'A')
+//   console.log(getGrade(89,89,90))//, 'B') 
+//   console.log(getGrade(75,70,79))// , 'C')
+
+
+
+// The code provided is supposed return a person's Full Name given their first and last names.
+
+// But it's not working properly.
+
+// Notes
+// The first and/or last names are never null, but may be empty.
+
+// Task
+// Fix the bug so we can all go home early.
+
+
+class Dinglemouse{
+
+    constructor( firstName, lastName ){
+        this.firstName = firstName
+        this.lastName = lastName
+    }
+    
+    getFullName(){
+        if(this.firstName === "" && this.lastName === "") return ""
+        else if(this.firstName === "") return this.lastName 
+        else if(this.lastName === "") return this.firstName
+        return this.firstName+" "+ this.lastName
+    }
+    
+  }
+
+  // refactored version
+
+  class Dinglemouse2{
+
+    constructor( firstName, lastName ){
+      this._firstName=firstName;
+      this._lastName=lastName;
+    }
+    
+    getFullName(){
+      return `${this._firstName} ${this._lastName}`.trim();
+    }
+    
+  }
+  
+
+//   console.log(new Dinglemouse("Clint", "Eastwood").getFullName())//, "Clint Eastwood");
+//   console.log(new Dinglemouse2("Clint", "Eastwood").getFullName())//, "Clint Eastwood");
