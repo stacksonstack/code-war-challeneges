@@ -70,6 +70,6 @@ const generateHashtag = str => {
 }
 
 
-console.log(generateHashtag("")) //, false, "Expected an empty string to return false")
-console.log(generateHashtag(" ".repeat(200))) //, false, "Still an empty string")
-console.log(generateHashtag("Do We have A Hashtag")) //, "#DoWeHaveAHashtag", "Expected a Hashtag (#) at the beginning.")
+// console.log(generateHashtag("")) //, false, "Expected an empty string to return false")
+// console.log(generateHashtag(" ".repeat(200))) //, false, "Still an empty string")
+// console.log(generateHashtag("Do We have A Hashtag")) //, "#DoWeHaveAHashtag", "Expected a Hashtag (#) at the beginning.")
