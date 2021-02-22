@@ -22,7 +22,7 @@ function loop_size(node){
     // keep the turtle motionless and move the rabbit
     // until it finds the turtle again, counting the
     // nodes the rabbit visits in the mean time.
-    
+
     var count = 0;
     do {
       ++count;
@@ -33,3 +33,29 @@ function loop_size(node){
     // voila
     return count;
   }
+
+
+//   Your task, is to create NxN multiplication table, of size provided in parameter.
+
+// for example, when given size is 3:
+
+// 1 2 3
+// 2 4 6
+// 3 6 9
+// for given example, the return value should be: [[1,2,3],[2,4,6],[3,6,9]]
+
+multiplicationTable = function(size) {
+    var foo = [];
+    for (var i = 1; i <= size; i++) {
+        foo.push(i);
+    }
+
+    
+    return foo.map((item) => foo.map((num)=> num * item ))
+}
+
+
+
+console.log(multiplicationTable(3)) //, [[1,2,3], [2,4,6], [3,6,9]]);
+
+console.log(multiplicationTable(4))
