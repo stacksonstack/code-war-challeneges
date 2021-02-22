@@ -46,5 +46,6 @@ console.log(
     { name: "Homer" },
     { name: "Marge" },
   ])
-); //, 'Bart, Lisa, Maggie, Homer & Marge',"Must work with many names")
+);
+ //, 'Bart, Lisa, Maggie, Homer & Marge',"Must work with many names")
 // console.log(list([{ name: "Bart" }, { name: "Lisa" }, { name: "Maggie" }])); //, 'Bart, Lisa & Maggie', "Must work with many names")
